@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--
+  TODO: have this policy reviewed before publishing
+-->
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>개인정보 처리방침 - Remora</title>
+  <meta name="description" content="Remora 개인정보 처리방침: 계정도, 분석 도구도, 추적도 없습니다. 호스트와 키는 기기에 남고, 동기화를 켜면 사용자 본인의 iCloud를 씁니다.">
+  <meta name="theme-color" content="#0b0e0c" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f5f7f3" media="(prefers-color-scheme: light)">
+  <meta name="color-scheme" content="dark light">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="개인정보 처리방침 - Remora">
+  <meta property="og:description" content="Remora 개인정보 처리방침: 계정도, 분석 도구도, 추적도 없습니다. 호스트와 키는 기기에 남고, 동기화를 켜면 사용자 본인의 iCloud를 씁니다.">
+  <link rel="alternate" hreflang="en" href="../../privacy/">
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="../" aria-label="Remora 홈">
+        <svg class="brand-mark" width="30" height="30" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect x="1.25" y="1.25" width="29.5" height="29.5" rx="7" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M9 11l6 5-6 5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 22h6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+        <span>Remora</span>
+      </a>
+
+      <nav class="nav" aria-label="주요 메뉴">
+        <a href="../#features">기능</a>
+        <a href="../pricing/">가격</a>
+        <a href="./" aria-current="page">개인정보</a>
+        <a href="../support/">지원</a>
+        <a class="language-link" href="../../privacy/" lang="en" hreflang="en">English</a>
+      </nav>
+
+      <details class="mobile-nav">
+        <summary aria-label="메뉴 열기"></summary>
+        <nav class="mobile-nav-panel" aria-label="모바일 메뉴">
+          <a href="../">홈</a>
+          <a href="../#features">기능</a>
+          <a href="../pricing/">가격</a>
+          <a href="./" aria-current="page">개인정보</a>
+          <a href="../support/">지원</a>
+          <a href="../terms/">이용 약관</a>
+          <a href="../../privacy/" lang="en" hreflang="en">English</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">privacy</p>
+        <h1>개인정보 처리방침</h1>
+        <p class="lede">이 방침은 bbdyno(이하 "개발자")가 배포하는 Remora(이하 "앱")가 사용자의 정보를 어떻게 다루는지 설명합니다. 요약하면, 개발자는 사용자의 정보를 수집하지 않습니다.</p>
+        <p class="meta">시행일: 2026년 10월 12일</p>
+      </div>
+    </section>
+
+    <div class="page-body">
+      <div class="container">
+        <article class="doc">
+          <div class="callout">
+            <ul>
+              <li>Remora에는 계정도 회원가입도 없습니다.</li>
+              <li>개발자는 서버를 운영하지 않으며 앱에서 어떤 데이터도 받지 않습니다.</li>
+              <li>분석 도구, 광고, 추적이 없고, 데이터를 수집하는 서드파티 SDK도 없습니다.</li>
+              <li>데이터는 사용자의 기기에 남습니다. 동기화를 켠 경우에는 사용자 본인의 iCloud에도 저장됩니다.</li>
+            </ul>
+          </div>
+
+          <h2>1. 수집하는 정보</h2>
+          <p>없습니다. Remora는 사용자, 기기, 서버, 앱 사용 방식에 관한 어떤 정보도 개발자에게 보내지 않습니다. 개발자는 앱을 위한 서버를 운영하지 않으므로 앱이 데이터를 보낼 곳 자체가 없습니다.</p>
+          <p>Remora에는 분석, 광고, 추적을 위한 코드가 들어 있지 않으며, 데이터를 수집하는 서드파티 SDK도 포함되어 있지 않습니다.</p>
+
+          <h2>2. 기기에 저장되는 정보</h2>
+          <p>앱이 동작하려면 아래 정보를 기기에 보관해야 합니다.</p>
+          <ul>
+            <li><strong>앱 데이터:</strong> 호스트 목록, 저장한 명령어 스니펫, 포트 포워딩 규칙, 접속한 적이 있는 서버의 알려진 호스트 키</li>
+            <li><strong>인증 정보:</strong> 비밀번호와 SSH 개인 키. 기기의 Apple 키체인에 저장됩니다. 아래에 설명한 iCloud 동기화를 켠 경우에만 기기 밖으로 나갑니다.</li>
+          </ul>
+          <p>이 정보는 개발자에게 전송되지 않습니다.</p>
+
+          <h2>3. iCloud 동기화(선택 사항, Pro)</h2>
+          <p>iCloud 동기화는 사용자가 직접 켜기 전에는 꺼져 있습니다. 켜면 호스트, 스니펫, 포트 포워딩 규칙, 확인한 호스트 키가 사용자 본인의 비공개 iCloud 데이터베이스(Apple CloudKit)를 통해 사용자의 Apple 기기 간에 동기화되고, 비밀번호와 개인 키는 Apple이 종단간 암호화하는 iCloud 키체인을 통해 동기화됩니다.</p>
+          <p>이 데이터는 사용자의 iCloud 계정에 저장되며 Apple의 개인정보 처리방침에 따라 Apple이 처리합니다. 개발자는 이 데이터에 접근할 수 없습니다.</p>
+
+          <h2>4. 서버 연결</h2>
+          <p>SSH와 SFTP 연결은 사용자의 기기에서 사용자가 설정한 서버로 직접 이루어지며, 개발자의 서버를 거치지 않습니다. 접속 대상 서버는 다른 SSH 클라이언트로 접속할 때와 마찬가지로 네트워크 주소, 로그인에 쓴 사용자 이름 같은 정보를 받게 되며, 이 정보는 해당 서버 운영자의 정책에 따라 처리됩니다.</p>
+
+          <h2>5. 구매</h2>
+          <p>Remora Pro 구매와 구독 결제는 App Store를 통해 Apple이 처리합니다. 개발자는 결제 카드 정보를 받지 않습니다. Apple은 개인을 식별할 수 없는 판매·사용 통계를 개발자에게 제공할 수 있으며, 사용자가 기기 설정에서 공유에 동의한 경우에 한해 진단 및 충돌 정보도 제공할 수 있습니다.</p>
+
+          <h2>6. 문의할 때</h2>
+          <p>지원을 받으려고 이메일을 보내면 개발자는 보낸 사람의 이메일 주소와 메일에 적은 내용을 받게 됩니다. 이 정보는 답변하고 문의를 해결하는 데에만 씁니다.</p>
+
+          <h2>7. 내 데이터에 대한 권한</h2>
+          <p>데이터는 사용자의 기기에, 그리고 동기화를 켰다면 사용자 본인의 iCloud 계정에 있으므로 사용자가 직접 관리합니다. 개발자는 사본을 갖고 있지 않아 대신 열람, 내보내기, 삭제해 드릴 데이터가 없습니다. iCloud에 저장된 데이터는 Apple 계정의 iCloud 설정에서 관리할 수 있습니다.</p>
+
+          <h2>8. 아동</h2>
+          <p>Remora는 서버를 관리하는 사람을 위한 도구이며 아동을 대상으로 하지 않습니다. 위에서 설명한 대로 앱은 누구의 개인정보도 수집하지 않습니다.</p>
+
+          <h2>9. 방침의 변경</h2>
+          <p>이 방침이 바뀌면 이 페이지에 새 방침을 올리고 위의 시행일을 고칩니다.</p>
+
+          <h2>10. 문의</h2>
+          <p>이 방침에 관해 궁금한 점은 <a href="mailto:della.kimko@gmail.com">della.kimko@gmail.com</a>으로 보내 주세요.</p>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="../">
+          <svg class="brand-mark" width="30" height="30" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect x="1.25" y="1.25" width="29.5" height="29.5" rx="7" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M9 11l6 5-6 5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 22h6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+          <span>Remora</span>
+        </a>
+        <p>iPhone, iPad, Mac에서 쓰는 원격 터미널과 서버 접속 앱.</p>
+        <p>&copy; 2026 bbdyno</p>
+        <p class="footer-legal">Apple, App Store, iCloud, iPhone, iPad, Mac, Keychain은 미국 및 그 밖의 국가와 지역에서 등록된 Apple Inc.의 상표입니다.</p>
+      </div>
+      <nav class="footer-links" aria-label="하단 메뉴">
+        <a href="../pricing/">가격</a>
+        <a href="../support/">지원</a>
+        <a href="./">개인정보 처리방침</a>
+        <a href="../terms/">이용 약관</a>
+        <a href="../../privacy/" lang="en" hreflang="en">English</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

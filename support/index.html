@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+  TODO: check the step-by-step wording against the shipped app UI
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support - Remora</title>
+  <meta name="description" content="Help for Remora: adding a host, importing an SSH key, the host key prompt, iCloud sync, cancelling a subscription, and how to contact us.">
+  <meta name="theme-color" content="#0b0e0c" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f5f7f3" media="(prefers-color-scheme: light)">
+  <meta name="color-scheme" content="dark light">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Support - Remora">
+  <meta property="og:description" content="Help for Remora: adding a host, importing an SSH key, the host key prompt, iCloud sync, cancelling a subscription, and how to contact us.">
+  <link rel="alternate" hreflang="ko" href="../ko/support/">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="brand" href="../" aria-label="Remora home">
+        <svg class="brand-mark" width="30" height="30" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect x="1.25" y="1.25" width="29.5" height="29.5" rx="7" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M9 11l6 5-6 5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 22h6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+        <span>Remora</span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../#features">Features</a>
+        <a href="../pricing/">Pricing</a>
+        <a href="../privacy/">Privacy</a>
+        <a href="./" aria-current="page">Support</a>
+        <a class="language-link" href="../ko/support/" lang="ko" hreflang="ko">한국어</a>
+      </nav>
+
+      <details class="mobile-nav">
+        <summary aria-label="Open navigation"></summary>
+        <nav class="mobile-nav-panel" aria-label="Mobile navigation">
+          <a href="../">Home</a>
+          <a href="../#features">Features</a>
+          <a href="../pricing/">Pricing</a>
+          <a href="../privacy/">Privacy</a>
+          <a href="./" aria-current="page">Support</a>
+          <a href="../terms/">Terms of Use</a>
+          <a href="../ko/support/" lang="ko" hreflang="ko">한국어</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">support</p>
+        <h1>Support</h1>
+        <p class="lede">Answers to common questions. If yours is not here, <a href="#contact">get in touch</a>.</p>
+      </div>
+    </section>
+
+    <div class="page-body">
+      <div class="container">
+        <article class="doc">
+          <h2 id="add-host">How do I add a host?</h2>
+          <p>Open the host list and add a new host. Enter the server's address, port and username, then choose how to sign in: with a password or with one of your SSH keys. You can put the host in a group to keep the list tidy.</p>
+          <p>If you already keep your servers in an OpenSSH config file, you can import the hosts from that file instead of typing them in one by one.</p>
+
+          <h2 id="import-key">How do I import an SSH key?</h2>
+          <p>Open key management and choose to import a key. Remora accepts ed25519 and RSA private keys in OpenSSH format. Once it is imported, pick that key in a host's sign-in settings.</p>
+          <p>No key yet? You can generate a new ed25519 key in the app, then add its public key to your server.</p>
+          <p>Private keys are stored only in the Apple Keychain on your device.</p>
+
+          <h2 id="host-key">What does the host key prompt mean?</h2>
+          <p>Every SSH server has a host key that identifies it. The first time you connect to a server, Remora shows you its key and asks whether to trust it, because it has nothing to compare against yet. If you can, check the fingerprint against one you got from the server's administrator or provider.</p>
+          <p>After that, Remora remembers the key. If the server presents a different key later, you get a warning. Sometimes there is an ordinary reason, such as the server being reinstalled. It can also mean that something is intercepting your connection. If you were not expecting the change, do not continue until you have confirmed it with whoever runs the server.</p>
+
+          <h2 id="sync">How does sync work?</h2>
+          <p>iCloud sync is a Remora Pro feature. When you turn it on, your hosts, snippets and port-forward rules sync between your Apple devices that are signed in to the same Apple account.</p>
+          <p>Sync uses your own private iCloud database (Apple CloudKit) and iCloud Keychain. It does not go through any server of ours, and we cannot access the data. If something is not showing up on another device, check that it is signed in to the same Apple account, that iCloud is turned on, and that sync is turned on in Remora on both devices.</p>
+
+          <h2 id="cancel">How do I cancel a subscription?</h2>
+          <p>Subscriptions are managed by Apple, so you cancel in your Apple account settings and not inside Remora.</p>
+          <ul>
+            <li><strong>iPhone or iPad:</strong> open Settings, tap your name, tap Subscriptions, choose Remora, then tap Cancel Subscription.</li>
+            <li><strong>Mac:</strong> open the App Store, click your name, open Account Settings, find Subscriptions and click Manage, then edit Remora and cancel.</li>
+          </ul>
+          <p>Deleting the app does not cancel a subscription. The lifetime option is a one-time purchase, so there is nothing to cancel. For refunds, contact Apple.</p>
+
+          <h2 id="contact">Contact</h2>
+          <p>Email <a href="mailto:della.kimko@gmail.com">della.kimko@gmail.com</a>. It helps if you include your device model, OS version and what you were doing when the problem appeared.</p>
+          <p>Please do not send passwords or private keys. We will never ask for them.</p>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="../">
+          <svg class="brand-mark" width="30" height="30" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect x="1.25" y="1.25" width="29.5" height="29.5" rx="7" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M9 11l6 5-6 5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 22h6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+          <span>Remora</span>
+        </a>
+        <p>Remote terminal &amp; server access for iPhone, iPad and Mac.</p>
+        <p>&copy; 2026 bbdyno</p>
+        <p class="footer-legal">Apple, App Store, iCloud, iPhone, iPad, Mac and Keychain are trademarks of Apple Inc., registered in the U.S. and other countries and regions.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="../pricing/">Pricing</a>
+        <a href="./">Support</a>
+        <a href="../privacy/">Privacy Policy</a>
+        <a href="../terms/">Terms of Use</a>
+        <a href="../ko/support/" lang="ko" hreflang="ko">한국어</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
