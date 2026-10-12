@@ -7,13 +7,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Remora - iPhone, iPad, Mac용 SSH 클라이언트</title>
-  <meta name="description" content="Remora는 iPhone, iPad, Mac용 SSH 클라이언트입니다. 터미널 탭, SFTP, 키 관리, 포트 포워딩, 점프 호스트를 지원하며 계정도 추적도 없습니다. 출시 예정.">
+  <meta name="description" content="Remora는 iPhone, iPad, Mac용 SSH 클라이언트입니다. 터미널, SFTP, 키 관리는 무료이고, 세션 탭과 포트 포워딩, 점프 호스트는 Pro에서 쓸 수 있습니다. 계정도 추적도 없습니다. 출시 예정.">
   <meta name="theme-color" content="#0b0e0c" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#f5f7f3" media="(prefers-color-scheme: light)">
   <meta name="color-scheme" content="dark light">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Remora - iPhone, iPad, Mac용 SSH 클라이언트">
-  <meta property="og:description" content="Remora는 iPhone, iPad, Mac용 SSH 클라이언트입니다. 터미널 탭, SFTP, 키 관리, 포트 포워딩, 점프 호스트를 지원하며 계정도 추적도 없습니다. 출시 예정.">
+  <meta property="og:description" content="Remora는 iPhone, iPad, Mac용 SSH 클라이언트입니다. 터미널, SFTP, 키 관리는 무료이고, 세션 탭과 포트 포워딩, 점프 호스트는 Pro에서 쓸 수 있습니다. 계정도 추적도 없습니다. 출시 예정.">
   <link rel="alternate" hreflang="en" href="../">
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <link rel="stylesheet" href="../assets/site.css">
@@ -97,19 +97,24 @@ active
       <div class="container">
         <div class="section-head">
           <p class="eyebrow">features</p>
-          <h2 id="features-title">매일 쓰는 SSH 도구, 무료로 다 됩니다.</h2>
-          <p>아래 기능은 모두 무료 버전에 들어 있습니다. 사용 기간 제한도, 광고도 없습니다.</p>
+          <h2 id="features-title">매일 쓰는 SSH 도구는 무료입니다.</h2>
+          <p>pro 표시가 붙은 기능은 Remora Pro에서 쓸 수 있습니다. 나머지는 무료 버전에 들어 있고, 사용 기간 제한도 광고도 없습니다.</p>
         </div>
         <ul class="grid">
           <li class="card">
             <span class="tag">ssh</span>
-            <h3>세션 탭이 있는 터미널</h3>
-            <p>SSH 세션을 여러 개 열어 두고 탭으로 오가며 작업하세요.</p>
+            <h3>SSH 터미널</h3>
+            <p>서버에 접속해 셸을 여세요. 무료 버전에서는 세션을 한 번에 하나씩 엽니다.</p>
+          </li>
+          <li class="card">
+            <span class="tag">input</span>
+            <h3>긴 명령어도 편하게</h3>
+            <p>키보드 위에 큼직한 키 줄이 있고, 붙여넣기 키도 들어 있습니다. 긴 명령어는 명령어 편집기에서 쓰거나 붙여 넣으세요. '출력에서 복사'는 터미널 출력에 나온 링크, IP 주소, 경로를 모아 보여 주니 한 번만 눌러 복사하면 됩니다.</p>
           </li>
           <li class="card">
             <span class="tag">hosts</span>
             <h3>정리가 되는 호스트 목록</h3>
-            <p>서버를 그룹으로 묶고, 필요한 서버는 검색으로 바로 찾으세요. 쓰던 OpenSSH 설정 파일이 있다면 호스트를 그대로 가져올 수 있습니다.</p>
+            <p>서버를 그룹으로 묶고, 필요한 서버는 검색으로 바로 찾으세요. 호스트마다 접속 후 실행할 명령어도 정해 둘 수 있습니다. 무료 버전에서는 호스트를 3개까지 저장합니다.</p>
           </li>
           <li class="card">
             <span class="tag">keys</span>
@@ -129,22 +134,47 @@ active
           <li class="card">
             <span class="tag">snippets</span>
             <h3>명령어 스니펫</h3>
-            <p>자주 치는 명령어를 저장해 두고 필요할 때 꺼내 쓰세요.</p>
+            <p>자주 치는 명령어를 저장해 두고 필요할 때 꺼내 쓰세요. 무료 버전에서는 스니펫을 3개까지 저장합니다.</p>
           </li>
           <li class="card">
-            <span class="tag">-L</span>
+            <span class="tag">lock</span>
+            <h3>앱 잠금</h3>
+            <p>Face ID, Touch ID 또는 기기 암호로 Remora를 잠가 두세요.</p>
+          </li>
+          <li class="card">
+            <span class="tag">theme</span>
+            <h3>테마와 글자 크기</h3>
+            <p>터미널 테마는 다크와 라이트 중에서 고르고, 글자 크기도 편한 대로 조절하세요. Remora Pro에는 테마가 더 있습니다.</p>
+          </li>
+          <li class="card">
+            <span class="tag pro">pro</span>
+            <h3>호스트·세션·스니펫 무제한</h3>
+            <p>호스트와 스니펫을 원하는 만큼 저장하고, SSH 세션을 여러 개 열어 두고 탭으로 오가며 작업하세요.</p>
+          </li>
+          <li class="card">
+            <span class="tag pro">pro</span>
             <h3>로컬 포트 포워딩</h3>
             <p>원격지에 있는 서비스를 내 기기의 로컬 포트로 연결해 쓰세요.</p>
           </li>
           <li class="card">
-            <span class="tag">-J</span>
+            <span class="tag pro">pro</span>
             <h3>점프 호스트</h3>
             <p>바로 닿지 않는 서버는 다른 서버를 거쳐 접속하세요.</p>
           </li>
           <li class="card">
             <span class="tag pro">pro</span>
+            <h3>OpenSSH 설정 가져오기</h3>
+            <p>쓰던 OpenSSH 설정 파일이 있다면 호스트를 그대로 가져올 수 있습니다.</p>
+          </li>
+          <li class="card">
+            <span class="tag pro">pro</span>
+            <h3>자동 재연결</h3>
+            <p>연결이 끊기거나 앱이 백그라운드에서 돌아오면 알아서 다시 연결합니다.</p>
+          </li>
+          <li class="card">
+            <span class="tag pro">pro</span>
             <h3>iCloud 동기화</h3>
-            <p>Remora Pro를 쓰면 호스트, 스니펫, 포트 포워딩 규칙이 내 Apple 기기끼리 동기화됩니다.</p>
+            <p>호스트, 스니펫, 포트 포워딩 규칙, 알려진 호스트 키가 내 Apple 기기끼리 동기화됩니다.</p>
           </li>
         </ul>
       </div>
@@ -154,8 +184,8 @@ active
       <div class="container">
         <div class="section-head">
           <p class="eyebrow">free vs pro</p>
-          <h2 id="plans-title">일은 무료 버전으로, 기기 간 동기화는 Pro로.</h2>
-          <p>Pro에 더해지는 기능은 iCloud 동기화 하나입니다. 무료 버전에는 기간 제한이 없습니다.</p>
+          <h2 id="plans-title">기본은 무료 버전으로, 제한 없이 쓰려면 Pro로.</h2>
+          <p>무료 버전에는 기간 제한이 없습니다. Remora Pro는 무료 버전의 제한을 풀고 아래 기능을 더합니다.</p>
         </div>
         <div class="plans">
           <article class="plan">
@@ -163,15 +193,16 @@ active
             <p class="price">$0</p>
             <p>기간 제한 없음. 광고 없음.</p>
             <ul>
-              <li>여러 세션을 탭으로 여는 SSH 터미널</li>
-              <li>그룹과 검색을 지원하는 호스트 목록</li>
+              <li>SSH 터미널(세션은 한 번에 하나)</li>
+              <li>붙여넣기 키가 있는 큼직한 키 줄, 명령어 편집기, 출력에서 복사</li>
+              <li>호스트 3개까지 저장</li>
+              <li>호스트별 접속 후 실행 명령어</li>
               <li>SSH 키 생성과 가져오기</li>
               <li>호스트 키 확인</li>
               <li>SFTP 파일 브라우저</li>
-              <li>명령어 스니펫</li>
-              <li>로컬 포트 포워딩</li>
-              <li>점프 호스트</li>
-              <li>OpenSSH 설정 파일에서 호스트 가져오기</li>
+              <li>스니펫 3개까지 저장</li>
+              <li>Face ID, Touch ID, 암호로 앱 잠금</li>
+              <li>다크·라이트 터미널 테마, 글자 크기 조절</li>
             </ul>
           </article>
           <article class="plan is-pro">
@@ -180,7 +211,13 @@ active
             <p>연 $19.99, 또는 한 번 결제로 평생 이용하는 $39.99도 있습니다. 예정 가격이며 지역에 따라 다를 수 있습니다.</p>
             <ul>
               <li>무료 버전의 모든 기능</li>
-              <li>호스트, 스니펫, 포트 포워딩 규칙을 내 Apple 기기 간에 iCloud로 동기화</li>
+              <li>호스트, 동시 세션(탭), 스니펫 무제한</li>
+              <li>로컬 포트 포워딩</li>
+              <li>점프 호스트</li>
+              <li>OpenSSH 설정 파일에서 호스트 가져오기</li>
+              <li>자동 재연결</li>
+              <li>추가 터미널 테마</li>
+              <li>내 Apple 기기 간 iCloud 동기화</li>
             </ul>
             <div class="actions">
               <a class="button ghost" href="pricing/">요금제 비교하기</a>

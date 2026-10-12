@@ -8,13 +8,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pricing - Remora</title>
-  <meta name="description" content="Remora is free with no time limit and no ads. Remora Pro adds iCloud sync: planned pricing $2.49 a month, $19.99 a year, or $39.99 once.">
+  <meta name="description" content="Remora is free with no time limit and no ads, for up to 3 hosts and one session at a time. Remora Pro removes the limits and adds port forwarding, jump hosts and iCloud sync: planned pricing $2.49 a month, $19.99 a year, or $39.99 once.">
   <meta name="theme-color" content="#0b0e0c" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#f5f7f3" media="(prefers-color-scheme: light)">
   <meta name="color-scheme" content="dark light">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Pricing - Remora">
-  <meta property="og:description" content="Remora is free with no time limit and no ads. Remora Pro adds iCloud sync: planned pricing $2.49 a month, $19.99 a year, or $39.99 once.">
+  <meta property="og:description" content="Remora is free with no time limit and no ads, for up to 3 hosts and one session at a time. Remora Pro removes the limits and adds port forwarding, jump hosts and iCloud sync: planned pricing $2.49 a month, $19.99 a year, or $39.99 once.">
   <link rel="alternate" hreflang="ko" href="../ko/pricing/">
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <link rel="stylesheet" href="../assets/site.css">
@@ -56,8 +56,8 @@
     <section class="page-head">
       <div class="container">
         <p class="eyebrow">pricing</p>
-        <h1>Free to use. Pro if you want sync.</h1>
-        <p class="lede">The free version has no time limit and no ads. Remora Pro adds iCloud sync across your Apple devices.</p>
+        <h1>Free to use. Pro when you need more.</h1>
+        <p class="lede">The free version has no time limit and no ads. Remora Pro removes its limits on hosts, sessions and snippets, and adds port forwarding, jump hosts, automatic reconnect, iCloud sync and more.</p>
       </div>
     </section>
 
@@ -91,25 +91,35 @@
         <section aria-labelledby="compare-title" style="margin-top:56px">
           <div class="section-head">
             <h2 id="compare-title">Free vs Pro</h2>
-            <p>Pro includes everything in Free, plus iCloud sync.</p>
+            <p>Pro includes everything in Free without the limits, plus the Pro-only rows at the end of the table.</p>
           </div>
           <div class="table-wrap">
           <table class="compare">
             <caption>Features included in Remora Free and Remora Pro</caption>
             <thead><tr><th scope="col">Feature</th><th scope="col">Free</th><th scope="col">Pro</th></tr></thead>
             <tbody>
-              <tr><th scope="row">SSH terminal with multiple session tabs</th><td><span class="yes" aria-label="Included">&#10003;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
+              <tr><th scope="row">SSH terminal</th><td><span class="yes" aria-label="Included">&#10003;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
+              <tr><th scope="row">Simultaneous sessions (tabs)</th><td>1</td><td>Unlimited</td></tr>
+              <tr><th scope="row">Saved hosts</th><td>3</td><td>Unlimited</td></tr>
+              <tr><th scope="row">Saved snippets</th><td>3</td><td>Unlimited</td></tr>
               <tr><th scope="row">Host list with groups and search</th><td><span class="yes" aria-label="Included">&#10003;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
+              <tr><th scope="row">A run-after-connecting command for each host</th><td><span class="yes" aria-label="Included">&#10003;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
+              <tr><th scope="row">Larger key row above the keyboard, with a paste key</th><td><span class="yes" aria-label="Included">&#10003;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
+              <tr><th scope="row">Command editor for writing and pasting long commands</th><td><span class="yes" aria-label="Included">&#10003;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
+              <tr><th scope="row">Copy links, IP addresses and paths from terminal output</th><td><span class="yes" aria-label="Included">&#10003;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
               <tr><th scope="row">Generate ed25519 keys</th><td><span class="yes" aria-label="Included">&#10003;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
               <tr><th scope="row">Import ed25519 and RSA keys (OpenSSH format)</th><td><span class="yes" aria-label="Included">&#10003;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
               <tr><th scope="row">Host key verification</th><td><span class="yes" aria-label="Included">&#10003;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
-              <tr><th scope="row">SFTP file browser</th><td><span class="yes" aria-label="Included">&#10003;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
-              <tr><th scope="row">Saved command snippets</th><td><span class="yes" aria-label="Included">&#10003;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
-              <tr><th scope="row">Local port forwarding</th><td><span class="yes" aria-label="Included">&#10003;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
-              <tr><th scope="row">Jump host</th><td><span class="yes" aria-label="Included">&#10003;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
-              <tr><th scope="row">Import hosts from an OpenSSH config file</th><td><span class="yes" aria-label="Included">&#10003;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
+              <tr><th scope="row">SFTP file browser (browse, download, upload, new folder, rename, delete)</th><td><span class="yes" aria-label="Included">&#10003;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
+              <tr><th scope="row">App lock with Face ID, Touch ID or passcode</th><td><span class="yes" aria-label="Included">&#10003;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
+              <tr><th scope="row">Dark and light terminal themes, adjustable font size</th><td><span class="yes" aria-label="Included">&#10003;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
               <tr><th scope="row">No ads, no time limit</th><td><span class="yes" aria-label="Included">&#10003;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
-              <tr><th scope="row">iCloud sync of hosts, snippets and port-forward rules</th><td><span class="no" aria-label="Not included">&ndash;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
+              <tr><th scope="row">Local port forwarding</th><td><span class="no" aria-label="Not included">&ndash;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
+              <tr><th scope="row">Jump hosts (connect through another server)</th><td><span class="no" aria-label="Not included">&ndash;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
+              <tr><th scope="row">Import hosts from an OpenSSH config file</th><td><span class="no" aria-label="Not included">&ndash;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
+              <tr><th scope="row">Automatic reconnect when the connection drops or the app returns from the background</th><td><span class="no" aria-label="Not included">&ndash;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
+              <tr><th scope="row">Additional terminal themes</th><td><span class="no" aria-label="Not included">&ndash;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
+              <tr><th scope="row">iCloud sync of hosts, snippets, port-forward rules and known host keys</th><td><span class="no" aria-label="Not included">&ndash;</span></td><td><span class="yes" aria-label="Included">&#10003;</span></td></tr>
             </tbody>
           </table>
         </div>

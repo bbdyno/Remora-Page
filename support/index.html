@@ -7,13 +7,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Support - Remora</title>
-  <meta name="description" content="Help for Remora: adding a host, importing an SSH key, the host key prompt, iCloud sync, cancelling a subscription, and how to contact us.">
+  <meta name="description" content="Help for Remora: adding a host, importing an SSH key, pasting a long command, the host key prompt, free version limits, iCloud sync, cancelling a subscription, and how to contact us.">
   <meta name="theme-color" content="#0b0e0c" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#f5f7f3" media="(prefers-color-scheme: light)">
   <meta name="color-scheme" content="dark light">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Support - Remora">
-  <meta property="og:description" content="Help for Remora: adding a host, importing an SSH key, the host key prompt, iCloud sync, cancelling a subscription, and how to contact us.">
+  <meta property="og:description" content="Help for Remora: adding a host, importing an SSH key, pasting a long command, the host key prompt, free version limits, iCloud sync, cancelling a subscription, and how to contact us.">
   <link rel="alternate" hreflang="ko" href="../ko/support/">
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <link rel="stylesheet" href="../assets/site.css">
@@ -65,20 +65,27 @@
         <article class="doc">
           <h2 id="add-host">How do I add a host?</h2>
           <p>Open the host list and add a new host. Enter the server's address, port and username, then choose how to sign in: with a password or with one of your SSH keys. You can put the host in a group to keep the list tidy.</p>
-          <p>If you already keep your servers in an OpenSSH config file, you can import the hosts from that file instead of typing them in one by one.</p>
+          <p>The free version saves up to 3 hosts. If you already keep your servers in an OpenSSH config file, Remora Pro can import the hosts from that file, so you do not have to type them in one by one.</p>
 
           <h2 id="import-key">How do I import an SSH key?</h2>
           <p>Open key management and choose to import a key. Remora accepts ed25519 and RSA private keys in OpenSSH format. Once it is imported, pick that key in a host's sign-in settings.</p>
           <p>No key yet? You can generate a new ed25519 key in the app, then add its public key to your server.</p>
           <p>Private keys are stored only in the Apple Keychain on your device.</p>
 
+          <h2 id="paste">How do I paste a long command?</h2>
+          <p>Tap the paste key on the key row above the keyboard. You can also open the command editor from the terminal's More menu and write or paste the command there.</p>
+
           <h2 id="host-key">What does the host key prompt mean?</h2>
           <p>Every SSH server has a host key that identifies it. The first time you connect to a server, Remora shows you its key and asks whether to trust it, because it has nothing to compare against yet. If you can, check the fingerprint against one you got from the server's administrator or provider.</p>
           <p>After that, Remora remembers the key. If the server presents a different key later, you get a warning. Sometimes there is an ordinary reason, such as the server being reinstalled. It can also mean that something is intercepting your connection. If you were not expecting the change, do not continue until you have confirmed it with whoever runs the server.</p>
 
+          <h2 id="free-limits">What are the limits of the free version?</h2>
+          <p>The free version has no time limit and no ads. It saves up to 3 hosts and 3 snippets, and runs one SSH session at a time. The terminal, the SFTP file browser, SSH key generation and import, host key verification and app lock are all included.</p>
+          <p>Remora Pro removes those limits and adds local port forwarding, jump hosts, importing hosts from an OpenSSH config file, automatic reconnect, additional terminal themes and iCloud sync. See the <a href="../pricing/">full comparison</a>.</p>
+
           <h2 id="sync">How does sync work?</h2>
-          <p>iCloud sync is a Remora Pro feature. When you turn it on, your hosts, snippets and port-forward rules sync between your Apple devices that are signed in to the same Apple account.</p>
-          <p>Sync uses your own private iCloud database (Apple CloudKit) and iCloud Keychain. It does not go through any server of ours, and we cannot access the data. If something is not showing up on another device, check that it is signed in to the same Apple account, that iCloud is turned on, and that sync is turned on in Remora on both devices.</p>
+          <p>iCloud sync is a Remora Pro feature. When you turn it on, your hosts, snippets, port-forward rules and known host keys sync between your Apple devices that are signed in to the same Apple account.</p>
+          <p>Sync uses your own private iCloud database (Apple CloudKit), and passwords and keys go through iCloud Keychain. It does not go through any server of ours, and we cannot access the data. If something is not showing up on another device, check that it is signed in to the same Apple account, that iCloud is turned on, and that sync is turned on in Remora on both devices.</p>
 
           <h2 id="cancel">How do I cancel a subscription?</h2>
           <p>Subscriptions are managed by Apple, so you cancel in your Apple account settings and not inside Remora.</p>

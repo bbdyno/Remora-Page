@@ -7,13 +7,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Remora - SSH Client for iPhone, iPad and Mac</title>
-  <meta name="description" content="Remora is an SSH client for iPhone, iPad and Mac: terminal tabs, SFTP, key management, port forwarding and jump hosts. No account, no tracking. Coming soon.">
+  <meta name="description" content="Remora is an SSH client for iPhone, iPad and Mac: terminal, SFTP and key management for free, with session tabs, port forwarding and jump hosts in Pro. No account, no tracking. Coming soon.">
   <meta name="theme-color" content="#0b0e0c" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#f5f7f3" media="(prefers-color-scheme: light)">
   <meta name="color-scheme" content="dark light">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Remora - SSH Client for iPhone, iPad and Mac">
-  <meta property="og:description" content="Remora is an SSH client for iPhone, iPad and Mac: terminal tabs, SFTP, key management, port forwarding and jump hosts. No account, no tracking. Coming soon.">
+  <meta property="og:description" content="Remora is an SSH client for iPhone, iPad and Mac: terminal, SFTP and key management for free, with session tabs, port forwarding and jump hosts in Pro. No account, no tracking. Coming soon.">
   <link rel="alternate" hreflang="ko" href="ko/">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="assets/site.css">
@@ -98,18 +98,23 @@ active
         <div class="section-head">
           <p class="eyebrow">features</p>
           <h2 id="features-title">The everyday SSH toolkit, free to use.</h2>
-          <p>Everything in this section is part of the free version. There is no time limit and there are no ads.</p>
+          <p>Cards tagged pro need Remora Pro. The rest is in the free version, which has no time limit and no ads.</p>
         </div>
         <ul class="grid">
           <li class="card">
             <span class="tag">ssh</span>
-            <h3>Terminal with session tabs</h3>
-            <p>Keep several SSH sessions open at once and switch between them with tabs.</p>
+            <h3>SSH terminal</h3>
+            <p>Open a shell on your server. The free version runs one session at a time.</p>
+          </li>
+          <li class="card">
+            <span class="tag">input</span>
+            <h3>Room for long commands</h3>
+            <p>A larger key row above the keyboard includes a paste key, and a command editor gives you room to write or paste long commands. Copy from output lists the links, IP addresses and paths found in the terminal output, so you can copy one with a tap.</p>
           </li>
           <li class="card">
             <span class="tag">hosts</span>
             <h3>An organised host list</h3>
-            <p>Sort servers into groups and find the one you need with search. Already have an OpenSSH config file? Import your hosts from it.</p>
+            <p>Sort servers into groups and find the one you need with search. Each host can have a command that runs after connecting. The free version saves up to 3 hosts.</p>
           </li>
           <li class="card">
             <span class="tag">keys</span>
@@ -129,22 +134,47 @@ active
           <li class="card">
             <span class="tag">snippets</span>
             <h3>Saved command snippets</h3>
-            <p>Save the commands you type again and again, so they are ready when you need them.</p>
+            <p>Save the commands you type again and again, so they are ready when you need them. The free version saves up to 3 snippets.</p>
           </li>
           <li class="card">
-            <span class="tag">-L</span>
+            <span class="tag">lock</span>
+            <h3>App lock</h3>
+            <p>Lock Remora with Face ID, Touch ID or your device passcode.</p>
+          </li>
+          <li class="card">
+            <span class="tag">theme</span>
+            <h3>Themes and font size</h3>
+            <p>Choose a dark or a light terminal theme and set the font size that suits you. Remora Pro adds more themes.</p>
+          </li>
+          <li class="card">
+            <span class="tag pro">pro</span>
+            <h3>Unlimited hosts, sessions and snippets</h3>
+            <p>Save as many hosts and snippets as you like, and keep several SSH sessions open at once in tabs.</p>
+          </li>
+          <li class="card">
+            <span class="tag pro">pro</span>
             <h3>Local port forwarding</h3>
             <p>Reach a service on the remote side through a local port on your device.</p>
           </li>
           <li class="card">
-            <span class="tag">-J</span>
-            <h3>Jump host</h3>
+            <span class="tag pro">pro</span>
+            <h3>Jump hosts</h3>
             <p>Connect to a server through another server when it is not directly reachable.</p>
           </li>
           <li class="card">
             <span class="tag pro">pro</span>
+            <h3>OpenSSH config import</h3>
+            <p>Already have an OpenSSH config file? Import your hosts from it.</p>
+          </li>
+          <li class="card">
+            <span class="tag pro">pro</span>
+            <h3>Automatic reconnect</h3>
+            <p>Remora reconnects on its own when the connection drops or the app returns from the background.</p>
+          </li>
+          <li class="card">
+            <span class="tag pro">pro</span>
             <h3>iCloud sync</h3>
-            <p>With Remora Pro, your hosts, snippets and port-forward rules stay in sync across your Apple devices.</p>
+            <p>Your hosts, snippets, port-forward rules and known host keys stay in sync across your Apple devices.</p>
           </li>
         </ul>
       </div>
@@ -154,8 +184,8 @@ active
       <div class="container">
         <div class="section-head">
           <p class="eyebrow">free vs pro</p>
-          <h2 id="plans-title">Free does the work. Pro keeps your devices in step.</h2>
-          <p>Pro adds one thing: iCloud sync. Nothing in the free version is on a timer.</p>
+          <h2 id="plans-title">Free covers the essentials. Pro takes the limits off.</h2>
+          <p>Nothing in the free version is on a timer. Remora Pro removes its limits and adds the features listed below.</p>
         </div>
         <div class="plans">
           <article class="plan">
@@ -163,15 +193,16 @@ active
             <p class="price">$0</p>
             <p>No time limit. No ads.</p>
             <ul>
-              <li>SSH terminal with multiple session tabs</li>
-              <li>Host list with groups and search</li>
+              <li>SSH terminal, one session at a time</li>
+              <li>Larger key row with a paste key, command editor and copy from output</li>
+              <li>Up to 3 saved hosts</li>
+              <li>A run-after-connecting command for each host</li>
               <li>SSH key generation and import</li>
               <li>Host key verification</li>
               <li>SFTP file browser</li>
-              <li>Command snippets</li>
-              <li>Local port forwarding</li>
-              <li>Jump host</li>
-              <li>Import hosts from an OpenSSH config file</li>
+              <li>Up to 3 saved snippets</li>
+              <li>App lock with Face ID, Touch ID or passcode</li>
+              <li>Dark and light terminal themes, adjustable font size</li>
             </ul>
           </article>
           <article class="plan is-pro">
@@ -180,7 +211,13 @@ active
             <p>Or $19.99 a year, or $39.99 once for lifetime. Planned pricing, may vary by region.</p>
             <ul>
               <li>Everything in Free</li>
-              <li>iCloud sync of hosts, snippets and port-forward rules across your Apple devices</li>
+              <li>Unlimited hosts, simultaneous sessions (tabs) and snippets</li>
+              <li>Local port forwarding</li>
+              <li>Jump hosts</li>
+              <li>Import hosts from an OpenSSH config file</li>
+              <li>Automatic reconnect</li>
+              <li>Additional terminal themes</li>
+              <li>iCloud sync across your Apple devices</li>
             </ul>
             <div class="actions">
               <a class="button ghost" href="pricing/">Compare plans</a>
